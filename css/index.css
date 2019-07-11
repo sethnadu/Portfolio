@@ -197,8 +197,9 @@ a img {
   height: 100px;
   margin: 0 auto;
   border-radius: 50%;
+  margin-bottom: 50px;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .top .arrow {
     display: none;
   }
@@ -210,8 +211,9 @@ a img {
   height: 50px;
   margin: 0 auto;
   border-radius: 50%;
+  margin-bottom: 50px;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .top .arrowSmall {
     display: none;
   }
