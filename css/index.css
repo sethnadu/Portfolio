@@ -145,6 +145,11 @@ a img {
   background: rgba(78, 76, 76, 0.8);
   border-radius: 10px;
 }
+@media (max-width: 600px) {
+  .top .content {
+    width: 70%;
+  }
+}
 .top .content h1 {
   font-size: 3rem;
 }
