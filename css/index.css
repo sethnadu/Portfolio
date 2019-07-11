@@ -125,11 +125,11 @@ a img {
   outline: 0;
 }
 .top {
-  background-color: ivory;
   background-image: url(../Assets/Unsplash-background/photo-1426170042593-200f250dfdaf.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 850px;
+  filter: brightness(150%);
+  background-size: cover ;
+  height: 100vh;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
@@ -142,7 +142,7 @@ a img {
   margin: auto;
   text-align: center;
   padding: 30px;
-  background: rgba(63, 62, 62, 0.6);
+  background: rgba(78, 76, 76, 0.8);
   border-radius: 10px;
 }
 .top .content h1 {
@@ -157,7 +157,7 @@ a img {
 }
 .top .arrow {
   display: flex;
-  background: rgba(63, 62, 62, 0.6);
+  background: rgba(78, 76, 76, 0.8);
   width: 100px;
   height: 100px;
   margin: 0 auto;
