@@ -198,6 +198,24 @@ a img {
   margin: 0 auto;
   border-radius: 50%;
 }
+@media (max-width: 600px) {
+  .top .arrow {
+    display: none;
+  }
+}
+.top .arrowSmall {
+  display: flex;
+  background: rgba(78, 76, 76, 0.8);
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+@media (min-width: 600px) {
+  .top .arrowSmall {
+    display: none;
+  }
+}
 body {
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
