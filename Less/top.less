@@ -1,22 +1,28 @@
 .top {
-    background-image: url(../Assets/Unsplash-background/photo-1426170042593-200f250dfdaf.jpeg);
+    background-image: url(../Assets/Unsplash-background/backgroundimage.jpeg);
     background-repeat: no-repeat;
-    filter: brightness(180%);
     background-size: cover ;
-    height: 870px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+
+    .screen {
+        background: rgba(78, 76, 76, 0.5);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
 
     #content {
         display: flex;
         border: 4px solid black;
         flex-direction: column;
-        justify-content: center;
-        margin: auto auto 10px auto;
+        justify-items: center;
+        background: rgba(78, 76, 76, 0.8);
+        margin: auto;
         text-align: center;
         padding: 30px;
         width: 50%;
-        background: rgba(78, 76, 76, 0.8);
+        
         border-radius: 10px;
 
         @media (max-width: 600px) {
@@ -68,7 +74,7 @@
 
     .arrow {
         display: flex;
-        background:rgba(78, 76, 76, 0.8);
+        background:rgba(78, 76, 76);
         width: 100px;
         height: 100px;
         margin: 10px auto auto auto;
@@ -83,7 +89,7 @@
     }
         .arrowSmall {
         display: flex;
-        background:rgba(78, 76, 76, 0.8);
+        background:rgba(78, 76, 76);
         width: 50px;
         height: 50px;
         margin: 10px auto auto auto;
@@ -96,6 +102,6 @@
         } 
         }
   
-
+    }
 }
 
