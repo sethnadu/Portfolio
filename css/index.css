@@ -302,7 +302,6 @@ a img {
   justify-content: flex-start;
   height: 50px;
   margin: auto 0 ;
-  padding-top: 35px;
 }
 .navMobile .display a {
   text-decoration: none;
@@ -326,6 +325,7 @@ a img {
   display: none;
 }
 .navMobile .expand {
+  padding-top: 35px;
   height: 150px;
 }
 body {
