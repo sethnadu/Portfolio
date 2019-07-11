@@ -133,7 +133,7 @@ a img {
   flex-direction: column;
 }
 .top .screen {
-  background: rgba(78, 76, 76, 0.5);
+  background: rgba(78, 76, 76, 0.2);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -301,7 +301,8 @@ a img {
   flex-direction: column;
   justify-content: flex-start;
   height: 50px;
-  margin: auto 0;
+  margin: auto 0 ;
+  padding-top: 35px;
 }
 .navMobile .display a {
   text-decoration: none;
