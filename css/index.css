@@ -197,7 +197,7 @@ a img {
   height: 100px;
   margin: 0 auto;
   border-radius: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 @media (max-width: 700px) {
   .top .arrow {
@@ -211,7 +211,7 @@ a img {
   height: 50px;
   margin: 0 auto;
   border-radius: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 @media (min-width: 700px) {
   .top .arrowSmall {
