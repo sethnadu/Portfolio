@@ -12,17 +12,17 @@ let img = document.querySelectorAll(".navMobile img");
 
 
 navImage.addEventListener("click", () => {
-display.classList.toggle("opacity");
+display.classList.toggle("hide");
 navImage2.classList.toggle('hide');
 navImage.classList.toggle('hide');
-navImage.classList.toggle("change");
+// navImage.classList.toggle("change");
 
 })
 
 navImage2.addEventListener("click", () => {
-    display.classList.toggle("opacity");
+    display.classList.toggle("hide");
     navImage.classList.toggle('hide');
     navImage2.classList.toggle('hide');
-    navImage2.classList.toggle("change");
+    // navImage2.classList.toggle("change");
 })
 
