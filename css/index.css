@@ -356,11 +356,6 @@ a img {
   margin: auto;
   padding: 10px;
 }
-@media (min-width: 800px) {
-  #navabout .aboutDiv {
-    margin-top: -38px;
-  }
-}
 @media (max-width: 700px) {
   #navabout .aboutDiv {
     flex-direction: column;
@@ -371,12 +366,19 @@ a img {
 }
 @media (max-width: 600px) {
   #navabout .aboutDiv {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 }
 #navabout .aboutDiv .myPictureDiv {
   display: flex;
   margin-right: 20px;
+}
+@media (max-width: 600px) {
+  #navabout .aboutDiv .myPictureDiv {
+    margin-bottom: 20px;
+    width: 80%;
+    margin-right: 0px;
+  }
 }
 #navabout .aboutDiv .myPictureDiv .myPicture {
   border-radius: 50%;
@@ -394,6 +396,11 @@ a img {
   justify-content: center;
   width: 50%;
   height: 100%;
+}
+@media (max-width: 800px) {
+  #navabout .aboutDiv .aboutText {
+    margin-top: -38px;
+  }
 }
 @media (max-width: 700px) {
   #navabout .aboutDiv .aboutText {
