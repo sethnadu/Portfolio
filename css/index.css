@@ -133,7 +133,7 @@ a img {
   flex-direction: column;
 }
 .top .screen {
-  background: rgba(78, 76, 76, 0.8);
+  background: rgba(78, 76, 76, 0.1);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -167,6 +167,7 @@ a img {
 }
 .top .screen #content h1 {
   font-size: 3rem;
+  color: #c23434;
 }
 @media (max-width: 800px) {
   .top .screen #content h1 {
