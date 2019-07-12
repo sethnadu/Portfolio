@@ -1,27 +1,29 @@
-let navImage = document.querySelector(".navImg")
-// let navImage2 = document.querySelector(".navImg2");
+let navImage = document.querySelector(".navImg");
 let navMobile = document.querySelector(".navMobile");
+let navAbout = document.querySelector(".about");
 let display = document.querySelector(".display");
-let navItem = document.querySelectorAll(".display a");
+let navItemMobile = document.querySelectorAll(".display a");
+let nava = document.querySelectorAll(".nav a");
+let a = document.querySelector("a");
 let img = document.querySelectorAll(".navMobile img");
 
-let navItemArray = Array.from(navItem);
+let navItemMobileArray = Array.from(navItemMobile);
 
 
 navImage.addEventListener("click", () => {
 display.classList.toggle("expand");
-navItemArray.forEach(item => {
+navItemMobileArray.forEach(item => {
     item.classList.toggle('hide');
-})
+});
 
-// navImage.classList.toggle("change");
+});
 
-})
+// nava.forEach(item => {
+//     item.addEventListener('click', () => {
+//        item.classList.toggle("clicked")
+       
+// });
+// });
 
-// navImage2.addEventListener("click", () => {
-//     display.classList.toggle("hide");
-//     navImage.classList.toggle('hide');
-//     navImage2.classList.toggle('hide');
-//     // navImage2.classList.toggle("change");
-// })
+
 

@@ -13,9 +13,9 @@
         margin: 0 auto;
         padding: 10px 0;
         margin-bottom: 0px;
-        background: rgb(104, 101, 101);
+        background: indianred;
         border-bottom: 4px solid black;
-        border-top: 4px solid black;
+        // border-top: 4px solid black;
       
         @media (max-width: 800px) {
             display: none;
@@ -33,8 +33,18 @@
           max-width: 100px;
           width: 100%;
           text-align: center;
+
+          &:hover {
+              color: rgba(78, 76, 76);
+              border-bottom: 2px solid rgba(78, 76, 76, 0.8);
+          }
         }
-      
+
+        // .clicked {
+        //     color: rgba(78, 76, 76);
+        //     border-bottom: 2px solid rgba(78, 76, 76, 0.8);
+        // }
+
       } 
 
     .aboutDiv {
@@ -45,7 +55,7 @@
         padding: 10px;
         
         @media (max-width: 800px) {
-            margin-top: -38px;
+            margin: auto;
         }
 
         @media (max-width: 700px) {
@@ -70,8 +80,6 @@
                 margin-right: 0px;
     
             }
-           
-        
     
         .myPicture {
             border-radius: 50%;
@@ -90,7 +98,7 @@
             margin-left: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+           
             width: 50%;
             height: 100%;
             
