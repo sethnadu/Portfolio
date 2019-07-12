@@ -147,9 +147,24 @@ a img {
   margin: auto;
   text-align: center;
   padding: 30px;
-  height: 180px;
+  height: 200px;
   width: 50%;
   border-radius: 10px;
+}
+@media (min-width: 800px) {
+  .top .screen #content {
+    height: 350px;
+  }
+}
+@media (max-width: 800px) and (min-width: 701px) {
+  .top .screen #content {
+    height: 300px;
+  }
+}
+@media (max-width: 700px) and (min-width: 601px) {
+  .top .screen #content {
+    height: 250px;
+  }
 }
 @media (max-width: 600px) {
   .top .screen #content {
