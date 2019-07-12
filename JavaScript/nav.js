@@ -12,18 +12,16 @@ let navItemMobileArray = Array.from(navItemMobile);
 
 navImage.addEventListener("click", () => {
 display.classList.toggle("expand");
-navItemMobileArray.forEach(item => {
-    item.classList.toggle('hide');
-});
+// TweenLite.from(".display", 1, { ease: Power0.easeNone, y: -180 });
 
 });
 
-// nava.forEach(item => {
-//     item.addEventListener('click', () => {
-//        item.classList.toggle("clicked")
-       
-// });
-// });
+// navImage2.addEventListener("click", () => {
+//     display.classList.toggle("expand");
+//     TweenLite.from(".display", 1, { ease: Power0.easeNone, y: -180 });
+    
+//     });
+
 
 
 
