@@ -110,80 +110,6 @@
                width: 80%;
             }
             
-            .icons {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                justify-content: space-evenly;
-
-
-                @media (max-width: 900px) {
-                    flex-direction: column;
-                    text-align: center;
-                    margin: auto;
-                }
-
-                .aboutIcons {
-                    margin: 20px 10px 20px 10px;
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    padding: 10px;
-
-                    @media (max-width: 900px) {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-evenly;
-                        
-                    }
-
-                    @media (max-width: 700px) {
-                        border: 4px solid indianred;
-                        background-color: rgba(78, 76, 76);
-                        border-radius: 10px;
-                    }
-
-                    .fas {
-                        margin-bottom: 10px;
-                        text-align: center;
-                        font-size: 6rem;
-                        color: indianRed;
-
-                        &:hover {
-                          color: rgba(78, 76, 76);
-                        }
-                    }
-
-                    
-
-                    .fab {
-                        margin-bottom: 10px;
-                        text-align: center;
-                        font-size: 6rem;
-                        color: indianRed;
-
-                        &:hover {
-                            color: rgba(78, 76, 76);
-                          }
-                    }
-
-                    h2 {
-                        font-size: 1.6rem;
-                        font-weight: bolder;
-                    }
-
-                    p {
-                        text-align: center;
-                        // background-color: indianred;
-                        // border: 4px solid rgba(78, 76, 76);
-                        font-size: 1rem;
-                        padding: 0 10px 10px 10px;
-                        // border-radius: 10px;
-                    }
-                   
-                }
-
-            }
 
             h2 {
                 font-size: 2.4rem;
@@ -211,7 +137,106 @@
         }
 
 
+        
+
+
     }
 
 }
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    .aboutIcons {
+        margin: 20px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       
+        padding: 10px;
+
+       
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+            border: 4px solid indianred;
+            background-color: rgba(78, 76, 76);
+            border-radius: 10px;
+
+            &:hover {
+                background-color: indianred;
+                border: 4px solid rgba(78, 76, 76);
+            }
+        }
+
+        .fas {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 6rem;
+            color: indianRed;
+
+            &:hover {
+              color: rgba(78, 76, 76);
+            }
+
+            @media (max-width: 700px) {
+                color: indianred;
+
+                &:hover {
+                    color: rgba(78, 76, 76);
+                }
+
+            }
+        }
+
+        
+
+        .fab {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 6rem;
+            color: indianRed;
+
+            &:hover {
+                color: rgba(78, 76, 76);
+              }
+
+              @media (max-width: 700px) {
+                color: indianred;
+
+                &:hover {
+                    color: rgba(78, 76, 76);
+                }
+            }
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: bolder;
+        }
+
+        p {
+            text-align: center;
+            // background-color: indianred;
+            // border: 4px solid rgba(78, 76, 76);
+            font-size: 1rem;
+            padding: 0 10px 10px 10px;
+            // border-radius: 10px;
+        }
+       
+    }
+
+}
+
 
