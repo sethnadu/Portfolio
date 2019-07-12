@@ -125,7 +125,7 @@ a img {
   outline: 0;
 }
 .top {
-  background-image: url(../Assets/Unsplash-background/backgroundimage.jpeg);
+  background-image: url(../Assets/Unsplash-background/code.png);
   background-repeat: no-repeat;
   background-size: cover ;
   height: 100vh;
@@ -133,17 +133,15 @@ a img {
   flex-direction: column;
 }
 .top .screen {
-  background: rgba(78, 76, 76, 0.1);
+  background: rgba(78, 76, 76, 0.8);
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .top .screen #content {
   display: flex;
-  border: 4px solid black;
   flex-direction: column;
   justify-items: center;
-  background: rgba(78, 76, 76, 0.8);
   margin: auto;
   text-align: center;
   padding: 30px;
@@ -209,7 +207,6 @@ a img {
 }
 .top .screen .arrow {
   display: flex;
-  background: rgba(78, 76, 76);
   width: 100px;
   height: 100px;
   margin: 10px auto auto auto;
