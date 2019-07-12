@@ -156,14 +156,9 @@ a img {
     height: 330px;
   }
 }
-@media (max-width: 900px) and (min-width: 801px) {
+@media (max-width: 900px) and (min-width: 600px) {
   .top .screen #content {
-    height: 300px;
-  }
-}
-@media (max-width: 800px) and (min-width: 601px) {
-  .top .screen #content {
-    height: 200px;
+    height: 220px;
     width: 70%;
   }
 }
