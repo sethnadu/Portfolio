@@ -133,7 +133,7 @@ a img {
   flex-direction: column;
 }
 .top .screen {
-  background: rgba(78, 76, 76, 0.1);
+  background: rgba(78, 76, 76, 0.8);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -167,7 +167,7 @@ a img {
 }
 .top .screen #content h1 {
   font-size: 3rem;
-  color: #c23434;
+  color: indianred;
 }
 @media (max-width: 800px) {
   .top .screen #content h1 {
@@ -180,30 +180,30 @@ a img {
   }
 }
 .top .screen #content h2 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 }
 @media (max-width: 800px) {
   .top .screen #content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 600px) {
   .top .screen #content h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 .top .screen #content h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-family: cursive;
 }
 @media (max-width: 800px) {
   .top .screen #content h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 600px) {
   .top .screen #content h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 .top .screen .arrow {
@@ -212,6 +212,9 @@ a img {
   height: 100px;
   margin: 10px auto auto auto;
   border-radius: 50%;
+}
+.top .screen .arrow:hover {
+  background-color: indianred;
 }
 @media (max-width: 900px) {
   .top .screen .arrow {
@@ -225,6 +228,9 @@ a img {
   height: 50px;
   margin: 10px auto auto auto;
   border-radius: 50%;
+}
+.top .screen .arrowSmall:hover {
+  background-color: indianred;
 }
 @media (min-width: 900px) {
   .top .screen .arrowSmall {
