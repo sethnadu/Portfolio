@@ -133,7 +133,7 @@ a img {
   flex-direction: column;
 }
 .top .screen {
-  background: rgba(78, 76, 76, 0.2);
+  background: rgba(78, 76, 76, 0.1);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -356,6 +356,11 @@ a img {
   margin: auto;
   padding: 10px;
 }
+@media (max-width: 800px) {
+  #navabout .aboutDiv {
+    margin-top: -38px;
+  }
+}
 @media (max-width: 700px) {
   #navabout .aboutDiv {
     flex-direction: column;
@@ -396,11 +401,6 @@ a img {
   justify-content: center;
   width: 50%;
   height: 100%;
-}
-@media (max-width: 800px) {
-  #navabout .aboutDiv .aboutText {
-    margin-top: -38px;
-  }
 }
 @media (max-width: 700px) {
   #navabout .aboutDiv .aboutText {
