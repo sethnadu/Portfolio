@@ -14,93 +14,139 @@
     <!-- Nav tablet and Mobile -->
     <section class="top">
       <div class = "screen">
-      <div id="navTablet">
-        <a class="home " href="#">Home</a>
-        <a class="about" href="#navabout">About</a>
-        <a class="projects" href="#">Projects</a>
-        <a class="contact" href="#">Contact</a>
-      </div>
-
-      <div class ="navMobile ">
-        <div class = "navMobileSection">
-          <img class = "navImg" src = "Assets/icons/hamburger.png"></img>
-          <img class = "navImg2 hide" src = "Assets/icons/imageedit_33_9257388122.png"></img>
-        </div>    
-        <div class ="display ">
-          <a class="home" href="#">Home</a>
-          <a class="about " href="#navabout">About</a>
-          <a class="projects " href="#">Projects</a>
-          <a class="contact " href="#">Contact</a> 
+        <div id="navTablet">
+          <a class="home " href="#">Home</a>
+          <a class="about" href="#navabout">About</a>
+          <a class="projects" href="#">Projects</a>
+          <a class="contact" href="#">Contact</a>
         </div>
-      </div>
+
+        <div class ="navMobile ">
+          <div class = "navMobileSection">
+            <img class = "navImg" src = "Assets/icons/hamburger.png"></img>
+            <img class = "navImg2 hide" src = "Assets/icons/imageedit_33_9257388122.png"></img>
+          </div>    
+          <div class ="display ">
+            <a class="home" href="#">Home</a>
+            <a class="about " href="#navabout">About</a>
+            <a class="projects " href="#">Projects</a>
+            <a class="contact " href="#">Contact</a> 
+          </div>
+        </div>
 
 
-      <!-- Name and Job -->
-      <div id="content">
-        <h1>Seth Nadu</h1>
-        <h2>Full Stack Web Developer</h2>
-        <h3>Lancaster, PA</h3>
-        <a class="arrow" href="#navabout"><img src="./Assets/icons/downarrow.png"/></a>
-      <a class="arrowSmall " href="#navabout"
-        ><img src="./Assets/icons/arrowdown-50.png"
-      /></a>
-      </div>
+        <!-- Name and Job -->
+        <div id="content">
+          <h1>Seth Nadu</h1>
+          <h2>Full Stack Web Developer</h2>
+          <h3>Lancaster, PA</h3>
+          <a class="arrow" href="#navabout"><img src="./Assets/icons/downarrow.png"/></a>
+          <a class="arrowSmall " href="#navabout"
+          ><img src="./Assets/icons/arrowdown-50.png"
+          /></a>
+        </div>
       </div>
     </section>
 
+    <section class = "aboutSection">
 
-
-    <section id = "navabout">
-        <div class="nav">
-          <a  class="home" href="#">Home</a>
-          <a  class="about" href = "#navabout">About</a>
-          <a  class="projects" href="#">Projects</a>
-          <a  class="contact" href="#">Contact</a>
-        </div>
-
-        <div class ="aboutDiv">
-          <div class ="myPictureDiv">
-             <img class = "myPicture" src = "./Assets/me.png">
+      <section id = "navabout">
+          <div class="nav">
+            <a  class="home" href="#">Home</a>
+            <a  class="about" href = "#navabout">About</a>
+            <a  class="projects" href="#projects">Projects</a>
+            <a  class="contact" href="#">Contact</a>
           </div>
-          <div class = "aboutText">
-            <h2>About</h2>
-            <p>Ever since I was a child I have been fascinated with computers. I did a high school internship with the
-                school’s IT department. I later found a company that specialized in refurbishing technology of all
-                form-factors, and in recycling equipment as well. I worked on software, but mostly on the hardware aspect of
-                these form-factors. I worked there for three and a half years and my interest in the software and coding area
-                grew! I now am fully investing in furthering my education at Lambda School, and to learn everything I can about
-                programming! From the front-end to the back-end, from HTML to React, I am ready to launch myself into this
-                career-oriented program to become a Full Stack Developer!</p>
+
+          <div class ="aboutDiv">
+            <div class ="myPictureDiv">
+              <img class = "myPicture" src = "./Assets/me.png">
+            </div>
+            <div class = "aboutText">
+              <h2>About</h2>
+              <p>Ever since I was a child I have been fascinated with computers. I did a high school internship with the
+                  school’s IT department. I later found a company that specialized in refurbishing technology of all
+                  form-factors, and in recycling equipment as well. I worked on software, but mostly on the hardware aspect of
+                  these form-factors. I worked there for three and a half years and my interest in the software and coding area
+                  grew! I now am fully investing in furthering my education at Lambda School, and to learn everything I can about
+                  programming! From the front-end to the back-end, from HTML to React, I am ready to launch myself into this
+                  career-oriented program to become a Full Stack Developer!</p>
+            </div>
+          </div>
+          <div class = "icons">
+              <div class = "responsive aboutIcons">
+                  <i class="fas fa-mobile-alt"></i>
+                  <div class = "iconContent">
+                    <h2>Responsive </h2>
+                    <p>Designs that fit perfectly from Desktop to Mobile</p>
+                  </div>
+              </div>
+
+              <div class = "JavaScript aboutIcons">
+                  <i class="fab fa-js-square"></i>
+                  <div class = "iconContent">
+                    <h2>JavaScript </h2>
+                    <p>Reusable Components for easily accessible changes</p>
+                 </div>
+              </div>
+
+              <div class = "CSS aboutIcons">
+                  <i class="fab fa-css3-alt"></i>
+                  <div class = "iconContent">
+                    <h2>Updated</h2>
+                    <p>Updated with new changes in CSS and HTML</p>
+                  </div>
+              </div>
+          </div>
+        </section>
+    </section>
+
+    <section id = "projects">
+
+      <h2 class= "title">Projects</h2>
+
+      <div class = "boxTabs">
+        <div class = "topics">
+          <div data-tab ="all" class ="tab activeTab">All</div>
+          <div data-tab ="buildWeek" class ="tab ">Build Week</div>
+          <div data-tab ="labs" class ="tab ">Lab Projects</div>
+          <div data-tab ="personal" class ="tab ">Personal</div>
+        </div>
+      </div>
+
+  <div class = "boxes">
+      <div class = "box" data-tab = "personal">
+        <img src = "./Assets/Projects/Personal/personal1.png">
+        <div class = "boxContent">
+          <h2></h2>
+          <a href=""></a>
+          <p></p>
+        </div>
+      </div>
+
+      <div class = "box" data-tab = "personal">
+          <img src = "./Assets/Projects/Personal/personal1.png">
+          <div class = "boxContent">
+            <h2></h2>
+            <a href=""></a>
+            <p></p>
           </div>
         </div>
-        <div class = "icons">
-            <div class = "responsive aboutIcons">
-                <i class="fas fa-mobile-alt"></i>
-                <div class = "iconContent">
-                <h2>Responsive </h2>
-                <p>Designs that fit perfectly from Desktop to Mobile</p>
-                </div>
+        <div class = "box" data-tab = "personal">
+            <img src = "./Assets/Projects/Personal/personal1.png">
+            <div class = "boxContent">
+              <h2></h2>
+              <a href=""></a>
+              <p></p>
             </div>
+          </div>
+      </div>
 
-            <div class = "JavaScript aboutIcons">
-                <i class="fab fa-js-square"></i>
-                <div class = "iconContent">
-                <h2>JavaScript </h2>
-                <p>Reusable Components for easily accessible changes</p>
-           </div>
-            </div>
-
-            <div class = "CSS aboutIcons">
-                <i class="fab fa-css3-alt"></i>
-                <div class = "iconContent">
-                <h2>Updated</h2>
-                <p>Updated with new changes in CSS and HTML</p>
-            </div>
-            </div>
-  </div>
-      </section>
+      
+    </section>
     <!-- Scripts -->
     <script src="./JavaScript/nav.js"></script>
+    <script src="./JavaScript/boxTabs.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -334,6 +334,7 @@ a img {
   width: 100%;
   display: flex;
   flex-direction: column;
+  border-bottom: 4px solid indianred;
 }
 #navabout .nav {
   display: flex;
@@ -365,9 +366,11 @@ a img {
   width: 100%;
   text-align: center;
 }
-#navabout .nav a:hover {
-  color: rgba(78, 76, 76);
-  border-bottom: 2px solid rgba(78, 76, 76, 0.8);
+@media (min-width: 700px) {
+  #navabout .nav a:hover {
+    color: rgba(78, 76, 76);
+    border-bottom: 2px solid rgba(78, 76, 76, 0.8);
+  }
 }
 #navabout .aboutDiv {
   display: flex;
@@ -453,6 +456,7 @@ a img {
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
+  margin-bottom: 50px;
 }
 @media (max-width: 700px) {
   .icons {
@@ -523,6 +527,59 @@ a img {
   text-align: center;
   font-size: 1rem;
   padding: 0 10px 10px 10px;
+}
+#projects .title {
+  text-align: center;
+  margin: 40px auto 20px auto;
+  font-size: 3rem;
+}
+#projects .boxTabs {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+#projects .boxTabs .topics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  width: 60%;
+}
+#projects .boxTabs .topics div {
+  font-size: 1rem;
+  margin: auto 10px auto 10px;
+  color: black;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: indianred;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+#projects .boxTabs .topics .activeTab {
+  color: indianred;
+  border: 4px solid indianred;
+  background-color: black;
+}
+#projects .boxes {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+#projects .boxes .box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#projects .boxes .box img {
+  height: 250px;
+  width: 300px;
+  border: 4px solid rgba(78, 76, 76);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 body {
   font-size: 62.5%;

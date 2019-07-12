@@ -7,6 +7,12 @@ let navItemMobile = document.querySelectorAll(".display a");
 let nava = document.querySelectorAll(".nav a");
 let a = document.querySelector("a");
 let img = document.querySelectorAll(".navMobile img");
+const navBar = document.querySelector(".nav");
+const aboutSection = document.querySelector(".aboutSection")
+const topSection = document.querySelector(".top");
+const projectSection = document.querySelector("#projects")
+const arrow = document.querySelector(".arrow")
+const arrowSmall = document.querySelector(".arrowSmall")
 
 let navItemMobileArray = Array.from(navItemMobile);
 
@@ -27,5 +33,39 @@ navImage2.addEventListener("click", () => {
     
 })
 
+aboutSection.addEventListener("wheel", () => {
+    navBar.style.position = "fixed";
+    navBar.style.top = "0";
+})
 
+aboutSection.addEventListener("wheel", () => {
+    navBar.style.position = "fixed";
+    navBar.style.top = "0";
+})
+
+topSection.addEventListener("wheel", () => {
+    navBar.style.position = "relative";
+    
+})
+
+
+projectSection.addEventListener("scroll", () => {
+    navBar.style.position = "fixed";
+    navBar.style.top = "0";
+})
+
+
+// arrow nav fixed
+
+arrow.addEventListener("click", () => {
+    navBar.style.position = "fixed";
+    navBar.style.top = "0";
+})
+
+nava.forEach(nav => {
+    nav.addEventListener("click", () => {
+        navBar.style.position = "fixed";
+        navBar.style.top = "0";
+    })
+})
 
