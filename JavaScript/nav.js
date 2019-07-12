@@ -1,5 +1,6 @@
 let navImage = document.querySelector(".navImg");
-let navMobile = document.querySelector(".navMobile");
+let navImage2 = document.querySelector(".navImg2");
+let navMobile = document.querySelector(".navMobileSection");
 let navAbout = document.querySelector(".about");
 let display = document.querySelector(".display");
 let navItemMobile = document.querySelectorAll(".display a");
@@ -10,18 +11,21 @@ let img = document.querySelectorAll(".navMobile img");
 let navItemMobileArray = Array.from(navItemMobile);
 
 
-navImage.addEventListener("click", () => {
-display.classList.toggle("expand");
-// TweenLite.from(".display", 1, { ease: Power0.easeNone, y: -180 });
+navMobile.addEventListener("click", () => {
+navImage.classList.toggle("hide");
+navImage2.classList.toggle("hide");
 
 });
 
-// navImage2.addEventListener("click", () => {
-//     display.classList.toggle("expand");
-//     TweenLite.from(".display", 1, { ease: Power0.easeNone, y: -180 });
+navImage.addEventListener("click", () => {
+    display.classList.add("expand")
     
-//     });
+})
 
+navImage2.addEventListener("click", () => {
+    display.classList.remove("expand")
+    
+})
 
 
 
