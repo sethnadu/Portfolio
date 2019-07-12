@@ -1,5 +1,5 @@
 #navabout {
-    height: 100vh;
+    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
         @media (max-width: 800px) {
             display: none;
         }
-      
+       
         a {
           display: flex;
           justify-content: space-evenly;
@@ -51,18 +51,18 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin: auto;
+        margin: 100px auto auto auto;
         padding: 10px;
         
         @media (max-width: 800px) {
-            margin: auto;
+            margin: 100px auto auto auto;
         }
 
         @media (max-width: 700px) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
+            margin-top: 100px;
         }
 
         @media (max-width: 600px) {
@@ -74,10 +74,12 @@
             display: flex;
             margin-right: 20px;
 
+            @media (max-width: 700px) {
+                margin-right: 0;
+            }
             @media (max-width: 600px) {
-                margin-bottom: 20px;
                 width: 80%;
-                margin-right: 0px;
+                margin: auto auto 20px auto;
     
             }
     
@@ -89,6 +91,8 @@
             max-width: 408px;
             height: 100%;
             max-height: 442px;
+
+            
 
         }
 
@@ -106,6 +110,80 @@
                width: 80%;
             }
             
+            .icons {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-evenly;
+
+
+                @media (max-width: 900px) {
+                    flex-direction: column;
+                    text-align: center;
+                    margin: auto;
+                }
+
+                .aboutIcons {
+                    margin: 20px 10px 20px 10px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 10px;
+
+                    @media (max-width: 900px) {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        
+                    }
+
+                    @media (max-width: 700px) {
+                        border: 4px solid indianred;
+                        background-color: rgba(78, 76, 76);
+                        border-radius: 10px;
+                    }
+
+                    .fas {
+                        margin-bottom: 10px;
+                        text-align: center;
+                        font-size: 6rem;
+                        color: indianRed;
+
+                        &:hover {
+                          color: rgba(78, 76, 76);
+                        }
+                    }
+
+                    
+
+                    .fab {
+                        margin-bottom: 10px;
+                        text-align: center;
+                        font-size: 6rem;
+                        color: indianRed;
+
+                        &:hover {
+                            color: rgba(78, 76, 76);
+                          }
+                    }
+
+                    h2 {
+                        font-size: 1.6rem;
+                        font-weight: bolder;
+                    }
+
+                    p {
+                        text-align: center;
+                        // background-color: indianred;
+                        // border: 4px solid rgba(78, 76, 76);
+                        font-size: 1rem;
+                        padding: 0 10px 10px 10px;
+                        // border-radius: 10px;
+                    }
+                   
+                }
+
+            }
 
             h2 {
                 font-size: 2.4rem;
