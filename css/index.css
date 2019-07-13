@@ -182,6 +182,7 @@ a img {
 }
 .top .screen #content h2 {
   font-size: 2.4rem;
+  text-shadow: 5px 10px 10px indianred;
 }
 @media (max-width: 800px) {
   .top .screen #content h2 {
@@ -196,6 +197,7 @@ a img {
 .top .screen #content h3 {
   font-size: 2.2rem;
   font-family: cursive;
+  text-shadow: 5px 10px 10px indianred;
 }
 @media (max-width: 800px) {
   .top .screen #content h3 {
