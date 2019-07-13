@@ -3,11 +3,10 @@ class Tab {
         this.element = element;
         this.tabData = this.element.dataset.tab;
 
-        if(this.tabData === "all") {
-            this.box = document.querySelectorAll(".box")
-        } else {
+        
+      
             this.box = document.querySelectorAll(`.box[data-tab = '${this.tabData}']`);
-        }
+      
 
         this.box = Array.from(this.box).map(card => new TabData((card)));
 

@@ -182,7 +182,7 @@ a img {
 }
 .top .screen #content h2 {
   font-size: 2.4rem;
-  text-shadow: 5px 10px 10px indianred;
+  text-shadow: 5px 0px 10px indianred;
 }
 @media (max-width: 800px) {
   .top .screen #content h2 {
@@ -197,7 +197,7 @@ a img {
 .top .screen #content h3 {
   font-size: 2.2rem;
   font-family: cursive;
-  text-shadow: 5px 10px 10px indianred;
+  text-shadow: 5px 0px 10px indianred;
 }
 @media (max-width: 800px) {
   .top .screen #content h3 {
@@ -223,9 +223,6 @@ a img {
   .top .screen .arrow {
     display: none;
   }
-}
-.top .screen .arrow::after {
-  transition: all 0.5s;
 }
 .top .screen .arrowSmall {
   display: flex;
@@ -306,7 +303,7 @@ a img {
   height: 30px;
   margin: 0 auto;
   width: 100%;
-  transition: all 2s ease-out;
+  transition: all 1s ease-in;
 }
 .navMobile .display a {
   text-decoration: none;
@@ -318,7 +315,7 @@ a img {
   text-align: left;
   width: 80px;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in;
 }
 .navMobile .display a:hover {
   color: indianred;
@@ -384,11 +381,11 @@ a img {
 }
 #navabout .title {
   text-align: center;
-  margin: 30px auto auto auto;
+  margin: 50px auto auto auto;
   font-size: 3rem;
 }
 #navabout hr {
-  border: 2px solid black;
+  border-bottom: 4px solid black;
   width: 60px;
   margin: 0 auto;
 }
@@ -597,9 +594,25 @@ a img {
   width: 100%;
   justify-content: center;
 }
+#projects .boxes .info {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-evenly;
+  margin: auto;
+  padding: 10px;
+  padding-left: 10px;
+}
+#projects .boxes .info li {
+  font-size: 1rem;
+  border-bottom: 2px solid indianred;
+  color: rgba(78, 76, 76);
+  text-align: center;
+  margin: auto 5px;
+  padding: 5px 5px;
+}
 #projects .boxes .box {
   margin: 2%;
-  display: block;
+  display: none;
   height: 250px;
   width: 300px;
   border-radius: 10px;
@@ -652,6 +665,11 @@ a img {
   color: rgba(78, 76, 76);
 }
 #projects .boxes .box:nth-child(1) {
+  display: flex;
+  width: 600px;
+  max-height: 500px;
+}
+#projects .boxes .box:nth-child(2) {
   background: url("../Assets/Projects/Personal/personal1.png") center center / cover;
 }
 body {
