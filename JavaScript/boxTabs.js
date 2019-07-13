@@ -3,7 +3,7 @@ class Tab {
         this.element = element;
         this.tabData = this.element.dataset.tab;
 
-        if(this.tabdata === "all") {
+        if(this.tabData === "all") {
             this.box = document.querySelectorAll(".box")
         } else {
             this.box = document.querySelectorAll(`.box[data-tab = '${this.tabData}']`);

@@ -18,7 +18,11 @@
         flex-direction: row;
         justify-content: center;
         padding: 20px;
-        width: 60%;
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+        }
+        
 
         div {
             font-size: 1rem;
@@ -31,6 +35,12 @@
             padding: 10px;
             text-align: center;
             cursor: pointer;
+
+            @media (max-width: 700px) {
+                margin: 10px auto;
+                width: 150px;
+                font-size: 1.2rem;
+            }
         }
 
         .activeTab {
@@ -60,9 +70,57 @@
             border-radius: 10px;
             margin-left: 10px;
             margin-right: 10px;
+            position: relative;
         }
+
+        .boxContent {
+            display: none;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            margin: -133px auto auto auto;
+            border: 4px solid @gray;
+            width: 300px;
+            background-color: black;;
+            border-radius: 10px;
+            opacity: .9;
+            top: 50%;
+            transform: translate(0, -50%);
+            height: 250px;
+
+            h2 {
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+                color: @gray;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+                font-family: cursive;
+                margin-bottom: 10px;
+                color: @gray;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+                color: @gray;
+
+                &:hover {
+                    color: indianred;
+                }
+
+            }
+
+            
+
+        }
+            
+
     }
 
 }
 
-}
+    }
