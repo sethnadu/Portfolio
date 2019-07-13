@@ -58,12 +58,16 @@
             <a  class="contact" href="#">Contact</a>
           </div>
 
+          <div class = "titleAbout">
+            <h2 class ="title">About</h2>
+            <hr>
+          </div>
+
           <div class ="aboutDiv">
             <div class ="myPictureDiv">
               <img class = "myPicture" src = "./Assets/me.png">
             </div>
             <div class = "aboutText">
-              <h2>About</h2>
               <p>Ever since I was a child I have been fascinated with computers. I did a high school internship with the
                   school’s IT department. I later found a company that specialized in refurbishing technology of all
                   form-factors, and in recycling equipment as well. I worked on software, but mostly on the hardware aspect of
@@ -75,7 +79,7 @@
           </div>
           <div class = "icons">
               <div class = "responsive aboutIcons">
-                  <i class="fas fa-mobile-alt"></i>
+                  <i class="icon fas fa-mobile-alt"></i>
                   <div class = "iconContent">
                     <h2>Responsive </h2>
                     <p>Designs that fit perfectly from Desktop to Mobile</p>
@@ -83,7 +87,7 @@
               </div>
 
               <div class = "JavaScript aboutIcons">
-                  <i class="fat fab fa-js-square"></i>
+                  <i class="icon fab fa-js-square"></i>
                   <div class = "iconContent">
                     <h2>JavaScript </h2>
                     <p>Reusable Components for easily accessible changes</p>
@@ -91,7 +95,7 @@
               </div>
 
               <div class = "CSS aboutIcons">
-                  <i class="fan fab fa-css3-alt"></i>
+                  <i class="icon fab fa-css3-alt"></i>
                   <div class = "iconContent">
                     <h2>Updated</h2>
                     <p>Updated with new changes in CSS and HTML</p>
@@ -104,27 +108,34 @@
     <section id = "projects">
 
       <h2 class= "title">Projects</h2>
+      <hr>
 
       <div class = "boxTabs">
         <div class = "topics">
           <div data-tab ="all" class ="tab activeTab">All</div>
+          
           <div data-tab ="buildWeek" class ="tab ">Build Week</div>
           <div data-tab ="labs" class ="tab ">Lab Projects</div>
           <div data-tab ="personal" class ="tab ">Personal</div>
         </div>
       </div>
 
-  <div class = "boxes">
+  <section class = "boxes">
         <div class = "box" data-tab = "personal">
-            <img src = "./Assets/Projects/Personal/personal1.png">
             <div class = "boxContent">
+              <div>
               <h2>Andrew Nadu Restoration</h2>
               <h3>Business Website</h3>
-              <a href="https://andrewnadurestoration.netlify.com/">Website</a>
-              <a href="https://github.com/sethnadu/AndrewNaduRestoration">GitHub</a>
+              </div>
+              <div class = "boxContentIcons">
+              <a href="https://andrewnadurestoration.netlify.com/"><img src = "./Assets/Projects/Personal/imageedit_36_7857736598.png"></a>
+              <a href="https://github.com/sethnadu/AndrewNaduRestoration"><img src="https://img.icons8.com/ios-filled/50/000000/github.png"></a>
+             </div>
             </div>
           </div>
-      </div>
+
+          
+    </section>
 
       
     </section>
@@ -132,6 +143,7 @@
     <script src="./JavaScript/nav.js"></script>
     <script src="./JavaScript/boxTabs.js"></script>
     <script src="./JavaScript/box.js"></script>
+    <script src="./JavaScript/about.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
   </body>
 </html>

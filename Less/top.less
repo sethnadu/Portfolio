@@ -1,136 +1,120 @@
 .top {
-    background-image: url(../Assets/Unsplash-background/code.png);
-    border-bottom: 2px solid indianred;
-    background-repeat: no-repeat;
-    background-size: cover ;
+  background-image: url(../Assets/Unsplash-background/code.png);
+  border-bottom: 2px solid indianred;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .screen {
+    background: rgba(78, 76, 76, 0.8);
     height: 100vh;
     display: flex;
     flex-direction: column;
 
-    .screen {
-        background: rgba(78, 76, 76, 0.8);
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
- 
     #content {
-        display: flex;
-        
-        flex-direction: column;
-        justify-items: center;
-        
-        margin: auto;
-        text-align: center;
-        padding: 30px;
-        height: 200px;
-        width: 50%;
-        
-        border-radius: 10px;
+      display: flex;
 
+      flex-direction: column;
+      justify-items: center;
 
+      margin: auto;
+      text-align: center;
+      padding: 30px;
+      height: 200px;
+      width: 50%;
 
-        @media (min-width: 900px) {
-            height: 330px;
-        }
+      border-radius: 10px;
 
-        
+      @media (min-width: 900px) {
+        height: 330px;
+      }
 
-        @media (max-width: 900px) and (min-width: 600px) {
-            height: 220px;
-            width: 70%;
+      @media (max-width: 900px) and (min-width: 600px) {
+        height: 220px;
+        width: 70%;
+      }
+
+      @media (max-width: 600px) {
+        width: 70%;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: indianred;
+
+        @media (max-width: 800px) {
+          font-size: 2.6rem;
         }
 
         @media (max-width: 600px) {
-            width: 70%;
-            
+          font-size: 2.2rem;
+        }
+      }
+
+      h2 {
+        font-size: 2.4rem;
+        text-shadow: 5px 10px 10px indianred;
+
+        @media (max-width: 800px) {
+          font-size: 1.8rem;
         }
 
-        h1 {
-            font-size: 3rem; 
-            color: indianred;
+        @media (max-width: 600px) {
+          font-size: 1.4rem;
+        }
+      }
 
-            @media (max-width: 800px) {
-                font-size: 2.6rem;
-            }
+      h3 {
+        font-size: 2.2rem;
+        font-family: cursive;
+        text-shadow: 5px 10px 10px indianred;
 
-            @media (max-width: 600px) {
-                font-size: 2.2rem;
-            }
+        @media (max-width: 800px) {
+          font-size: 1.6rem;
         }
 
-        h2 {
-            font-size: 2.4rem;
-            text-shadow: 5px 10px 10px indianred;
-
-            @media (max-width: 800px) {
-                font-size: 1.8rem;
-            }
-
-            @media (max-width: 600px) {
-                font-size: 1.4rem;
-            }
+        @media (max-width: 600px) {
+          font-size: 1.4rem;
         }
-            
-        h3 {
-            font-size: 2.2rem;
-            font-family: cursive;
-            text-shadow: 5px 10px 10px indianred;
-            
-           
-
-            @media (max-width: 800px) {
-                font-size: 1.6rem;
-            }
-
-            @media (max-width: 600px) {
-                font-size: 1.4rem;
-            }
-        }
-        }
-
-    
-    
-
-
+      }
+    }
 
     .arrow {
-        display: flex;
-       
-        width: 100px;
-        height: 100px;
-        margin: 10px auto auto auto;
-        border-radius: 50%;
+      display: flex;
+      width: 100px;
+      height: 100px;
+      margin: 10px auto auto auto;
+      border-radius: 50%;
 
-        &:hover {
-            background-color: indianred;
-        }
-      
+      &:hover {
+        background-color: indianred;
+      }
 
-
-        @media (max-width: 900px) {
-            display: none;
-        }
-
+      @media (max-width: 900px) {
+        display: none;
+      }
     }
-        .arrowSmall {
-        display: flex;
-        background:rgba(78, 76, 76);
-        width: 50px;
-        height: 50px;
-        margin: 10px auto auto auto;
-        border-radius: 50%;
 
-        &:hover {
-            background-color: indianred;
-        }
-       
-       
-
-        @media (min-width: 900px) {
-            display: none;
-        } 
-        }
-  
+    .arrow::after {
+        transition: all .5s;
     }
+    .arrowSmall {
+      display: flex;
+      background: rgba(78, 76, 76);
+      width: 50px;
+      height: 50px;
+      margin: 10px auto auto auto;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: indianred;
+      }
+
+      @media (min-width: 900px) {
+        display: none;
+      }
+    }
+  }
 }
-
