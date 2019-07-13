@@ -26,12 +26,15 @@ selectTab() {
     const box = document.querySelectorAll(".box");
     box.forEach(box => {
         box.style.display = "none";
+       
     })
 
     this.element.classList.add("activeTab");
+   
 
-    this.box.forEach(box => box.selectBox());
-
+    this.box.forEach(box => 
+        box.selectBox());
+        
     }
 }
 
@@ -41,6 +44,7 @@ class TabData {
     }
     selectBox() {
         this.boxElement.style.display = "flex";
+        
     }
 }
 
