@@ -5,7 +5,7 @@ let navAbout = document.querySelector(".about");
 let display = document.querySelector(".display");
 let navItemMobile = document.querySelectorAll(".display a");
 let nava = document.querySelectorAll(".nav a");
-let a = document.querySelector("a");
+let a = document.querySelectorAll("a");
 let img = document.querySelectorAll(".navMobile img");
 const navBar = document.querySelector(".nav");
 const aboutSection = document.querySelector(".aboutSection")
@@ -25,11 +25,17 @@ navImage2.classList.toggle("hide");
 
 navImage.addEventListener("click", () => {
     display.classList.add("expand")
+    a.forEach(a => {
+        a.style.opacity = "1";
+    })
     
 })
 
 navImage2.addEventListener("click", () => {
     display.classList.remove("expand")
+    a.forEach(a => {
+        a.style.opacity = "0";
+    })
     
 })
 
