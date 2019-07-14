@@ -13,6 +13,7 @@ const topSection = document.querySelector(".top");
 const projectSection = document.querySelector("#projects")
 const arrow = document.querySelector(".arrow")
 const arrowSmall = document.querySelector(".arrowSmall")
+const navIcons = document.querySelector(".navIcons");
 
 let navItemMobileArray = Array.from(navItemMobile);
 
@@ -28,6 +29,8 @@ navImage.addEventListener("click", () => {
     a.forEach(a => {
         a.style.opacity = "1";
     })
+    navIcons.style.opacity = "1";
+   
     
 })
 
