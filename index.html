@@ -46,9 +46,9 @@
             </div>
             <img class = "logo" src = "./app.png" style= "height:100px; width: 100px;">
             <div class = "navIcons">
-                <a class ="navicon" href="https://github.com/sethnadu"><img src="https://img.icons8.com/windows/50/000000/github.png"></a>
-                <a class ="navicon" href="https://www.linkedin.com/feed/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"></a>
-                <a class ="navicon" href="https://twitter.com/SethNadu"><img src="https://img.icons8.com/material-rounded/50/000000/twitter.png"></a>
+                <a class ="navicon" href="https://github.com/sethnadu"><img class ="github" src="https://img.icons8.com/windows/50/000000/github.png"></a>
+                <a class ="navicon" href="https://www.linkedin.com/feed/"><img class ="linkedin" src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"></a>
+                <a class ="navicon" href="https://twitter.com/SethNadu"><img class ="twitter" src="https://img.icons8.com/material-rounded/50/000000/twitter.png"></a>
                 </div>
           </div>
           
@@ -57,7 +57,7 @@
 
         <!-- Name and Job -->
         <div id="content">
-          <h1>Seth Nadu</h1>
+          <h1 class = "name">Seth Nadu</h1>
           <h2>Full Stack Web Developer</h2>
           <h3>Lancaster, PA</h3>
           <a class="arrow" href="#navabout"><img src="./Assets/icons/downarrow.png"/></a>
@@ -228,21 +228,37 @@
              </div>
             </div>
           </div>
-
-         
-
-        
-
-          
+ 
+    </section>
     </section>
 
-      
+    <section class ="contact">
+        <h2 class= "title">Contact Me</h2>
+        <hr>
+        <div class ="contactContainer">
+          <div class ="form">
+            <h2>Reach Out</h2>
+              <form action="https://formspree.io/seth.nadu@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="Subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button class ="submit" type="submit"><img class ="paperairplane" src="https://img.icons8.com/android/24/000000/paper-plane.png"></button>
+              </form>
+          </div>
+
+          <div class ="otherContact">
+
+          </div>
+
+        </div>
     </section>
     <!-- Scripts -->
     <script src="./JavaScript/nav.js"></script>
     <script src="./JavaScript/boxTabs.js"></script>
     <script src="./JavaScript/box.js"></script>
     <script src="./JavaScript/about.js"></script>
+    <script src="./JavaScript/top.js"></script>
+    <script src="./JavaScript/contact.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
   </body>
 </html>

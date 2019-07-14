@@ -14,6 +14,9 @@ const projectSection = document.querySelector("#projects")
 const arrow = document.querySelector(".arrow")
 const arrowSmall = document.querySelector(".arrowSmall")
 const navIcons = document.querySelector(".navIcons");
+const navGithub = document.querySelector(".github");
+const navLinkedin = document.querySelector(".linkedin");
+const navTwitter = document.querySelector(".twitter");
 
 let navItemMobileArray = Array.from(navItemMobile);
 
@@ -41,6 +44,7 @@ navImage2.addEventListener("click", () => {
     a.forEach(a => {
         a.style.opacity = "0";
     })
+    navIcons.style.opacity = "0";
     TweenLite.to(".logo", .5, { ease: Power2.easeOut, y: -200 });
     
 })
@@ -65,6 +69,35 @@ projectSection.addEventListener("scroll", () => {
     navBar.style.position = "fixed";
     navBar.style.top = "0";
 })
+
+
+//Github hover navmobile change
+navGithub.addEventListener("mouseover", () => {
+        navGithub.src = "https://img.icons8.com/dusk/50/000000/github.png"
+    })
+
+navGithub.addEventListener("mouseleave", () => {
+        navGithub.src = "https://img.icons8.com/windows/50/000000/github.png"
+    })
+//Linkedin hover navmobile change
+navLinkedin.addEventListener("mouseover", () => {
+        navLinkedin.src = "https://img.icons8.com/dusk/50/000000/linkedin.png"
+    })
+
+navLinkedin.addEventListener("mouseleave", () => {
+        navLinkedin.src = "https://img.icons8.com/ios-filled/50/000000/linkedin.png"
+    })
+
+//Twitter hover navmobile change
+navTwitter.addEventListener("mouseover", () => {
+    navTwitter.src = "https://img.icons8.com/dusk/50/000000/twitter.png"
+})
+
+navTwitter.addEventListener("mouseleave", () => {
+    navTwitter.src = "https://img.icons8.com/material-rounded/50/000000/twitter.png"
+})
+
+
 
 
 // arrow nav fixed

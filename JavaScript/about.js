@@ -4,6 +4,10 @@ const fas = document.querySelector(".fas");
 const aboutIcons = document.querySelectorAll(".aboutIcons");
 const iconContent = document.querySelectorAll(".iconContent")
 const aboutSectionDiv = document.querySelector(".aboutSection");
+const name = document.querySelector(".name");
+const job = document.querySelector("#content h2");
+const locationContent = document.querySelector("#content h3");
+const content = document.getElementById("content");
 
 
     iconList.forEach(i => {
@@ -19,6 +23,4 @@ const aboutSectionDiv = document.querySelector(".aboutSection");
                i.style.color = "indianred"; 
             })
     })
-
-
 
