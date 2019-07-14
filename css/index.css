@@ -793,65 +793,185 @@ a img {
 #projects .boxes .box:nth-child(8) {
   background: url("../Assets/Projects/Personal/personal1.png") center center / cover;
 }
-.contact {
+#contact {
   border-top: 4px solid indianred;
 }
-.contact .title {
+#contact .title {
   text-align: center;
   margin: 60px auto auto auto;
   font-size: 3rem;
 }
-.contact hr {
+#contact hr {
   border-bottom: 4px solid black;
   width: 90px;
   margin: 0 auto 20px auto;
 }
-.contact .contactContainer {
+#contact .contactContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  border: 1px solid black;
-  margin: 40px 2% 40px 2%;
+  justify-content: center;
+  margin: 50px auto 50px auto;
+  width: 100%;
 }
-.contact .contactContainer .form {
+@media (max-width: 600px) {
+  #contact .contactContainer {
+    flex-direction: column;
+    margin: 15px auto 15px auto;
+  }
+}
+#contact .contactContainer .form {
   display: flex;
   margin: auto;
-  border: 1px solid green;
+  border: 3px solid indianred;
+  border-radius: 5px;
+  background-color: rgba(78, 76, 76);
   flex-direction: column;
-  width: 40%;
+  width: 45%;
+  height: 330px;
 }
-.contact .contactContainer .form h2 {
+@media (max-width: 600px) {
+  #contact .contactContainer .form {
+    margin-bottom: 15px;
+    width: 80%;
+  }
+}
+#contact .contactContainer .form h2 {
+  margin: 10px auto auto auto;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
-.contact .contactContainer .form form {
+#contact .contactContainer .form hr {
+  width: 60px;
+  border-bottom: 4px solid indianred;
+  margin-bottom: 20px;
+}
+#contact .contactContainer .form form {
   display: flex;
   flex-direction: column;
   margin: 10px 0 10px 0;
 }
-.contact .contactContainer .form form input {
+#contact .contactContainer .form form input {
   margin: auto auto 10px auto;
   height: 20px;
   width: 130px;
   border: 2px solid indianred;
-  border-radius: 10px;
 }
-.contact .contactContainer .form form textarea {
+#contact .contactContainer .form form textarea {
   height: 100px;
   width: 70%;
   margin: auto auto 10px auto;
   border: 2px solid indianred;
-  border-radius: 10px;
 }
-.contact .contactContainer .form form button {
+#contact .contactContainer .form form button {
   width: 100px;
   text-align: center;
   margin: auto;
   border-radius: 10px;
-  border: 2px solid rgba(78, 76, 76);
+  border: 2px solid indianred;
   cursor: pointer;
   padding: 5px 10px;
-  background: indianred;
+}
+#contact .contactContainer .otherContact {
+  border: 3px solid indianred;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 45%;
+  height: 330px;
+  border-radius: 5px;
+  background-color: rgba(78, 76, 76);
+}
+@media (max-width: 600px) {
+  #contact .contactContainer .otherContact {
+    margin-top: 30px;
+    width: 80%;
+  }
+}
+#contact .contactContainer .otherContact h2 {
+  margin: 10px auto auto auto;
+  text-align: center;
+  font-size: 1.6rem;
+}
+#contact .contactContainer .otherContact hr {
+  width: 60px;
+  border-bottom: 4px solid indianred;
+  margin-bottom: 20px;
+}
+#contact .contactContainer .otherContact .githubSection {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+#contact .contactContainer .otherContact .githubSection .githubicon {
+  display: flex;
+  align-self: center;
+  margin-top: 10px;
+  margin-left: -60px;
+}
+#contact .contactContainer .otherContact .githubSection .githubAPI {
+  margin: 5px 5px 5px 0;
+}
+#contact .contactContainer .otherContact .githubSection .githubAPI p {
+  font-size: 1rem;
+}
+#contact .contactContainer .otherContact .githubSection .githubAPI p:hover {
+  color: lightgray;
+}
+#contact .contactContainer .otherContact .otherInfo {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+#contact .contactContainer .otherContact .otherInfo .contactIcons {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-evenly;
+}
+#contact .contactContainer .otherContact .otherInfo .contactEmailPhone {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+#contact .contactContainer .otherContact .otherInfo .contactEmailPhone a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  padding: 5px auto 5px auto;
+}
+#contact .contactContainer .otherContact .otherInfo .contactEmailPhone a:hover {
+  color: indianred;
+}
+.footer {
+  display: flex;
+  bottom: 0;
+  flex-direction: row;
+  height: 30px;
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: indianred;
+  border-top: 4px solid black;
+}
+.footer a {
+  margin: auto 5px auto 5px;
+  font-size: 0.8rem;
+}
+.footer a i {
+  font-size: 2rem;
+  color: black;
+}
+.footer h2 {
+  font-size: 1.3rem;
+  font-family: 'Audiowide', cursive;
+}
+.footer h3 {
+  font-size: 1rem;
+  margin: auto 10px auto 10px;
 }
 body {
   font-size: 62.5%;

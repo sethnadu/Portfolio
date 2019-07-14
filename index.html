@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
     <link rel="icon" type="image/png" href="./favicon.png" />
     <link rel="apple-touch-icon" sizes="100x100" href="/app.png">
@@ -25,7 +26,7 @@
           <a class="home " href="#">Home</a>
           <a class="about" href="#navabout">About</a>
           <a class="projects" href="#projects">Projects</a>
-          <a class="contact" href="#">Contact</a>
+          <a class="contact" href="#contact">Contact</a>
           
         </div>
 
@@ -42,7 +43,7 @@
             <a class="home" href="#">Home</a>
             <a class="about " href="#navabout">About</a>
             <a class="projects " href="#projects">Projects</a>
-            <a class="contact " href="#">Contact</a> 
+            <a class="contact " href="#contact">Contact</a> 
             </div>
             <img class = "logo" src = "./app.png" style= "height:100px; width: 100px;">
             <div class = "navIcons">
@@ -78,7 +79,7 @@
             <a  class="home" href="#">Home</a>
             <a  class="about" href = "#navabout">About</a>
             <a  class="projects" href="#projects">Projects</a>
-            <a  class="contact" href="#">Contact</a>
+            <a  class="contact" href="#contact">Contact</a>
           </div>
 
           <div class = "titleAbout">
@@ -232,12 +233,13 @@
     </section>
     </section>
 
-    <section class ="contact">
+    <section id ="contact">
         <h2 class= "title">Contact Me</h2>
         <hr>
         <div class ="contactContainer">
           <div class ="form">
             <h2>Reach Out</h2>
+            <hr>
               <form action="https://formspree.io/seth.nadu@gmail.com" method="POST">
                 <input type="text" name="name" placeholder="Name">
                 <input type="text" name="Subject" placeholder="Subject">
@@ -247,11 +249,41 @@
           </div>
 
           <div class ="otherContact">
-
+            <h2>Find Me</h2>
+            <hr>
+            <div class = "githubSection">
+              <div class ="githubAPI">
+                <!-- contact.js api info inputed here -->
+              </div>
+              <div class ="githubicon">
+                  <a class ="contactGithub" href="https://github.com/sethnadu"><img class ="github" src="https://img.icons8.com/windows/50/000000/github.png"></a>
+              </div>
+            </div>
+            <div class ="otherInfo">
+                <div class = "contactEmailPhone">
+                    <a href="mailto:seth.nadu@gmail.com">seth.nadu@gmail.com</a>
+                    <a href="tel:7173929717">(717) 392-9717</a>
+                  </div>
+              <div class ="contactIcons">
+                <a class ="contactLinkedin" href="https://www.linkedin.com/feed/"><img class ="linkedin" src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"></a>
+                <a class ="contactTwitter" href="https://twitter.com/SethNadu"><img class ="twitter" src="https://img.icons8.com/material-rounded/50/000000/twitter.png"></a>
+              </div>
+              
+              </div>
           </div>
 
         </div>
     </section>
+
+    <footer>
+      <div class ="footer">
+        <a alt = "font-awesome"><i class="fab fa-font-awesome"></i></a>
+        <h3>Full Stack</h3>
+        <h2>Seth Nadu</h2>
+        <h3>Web Developer</h3>
+        <a alt = "icons8"><img src="https://img.icons8.com/ios-filled/32/000000/icons8-new-logo.png"></a>
+      </div>
+    </footer>
     <!-- Scripts -->
     <script src="./JavaScript/nav.js"></script>
     <script src="./JavaScript/boxTabs.js"></script>

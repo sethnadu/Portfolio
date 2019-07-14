@@ -1,4 +1,4 @@
-.contact {
+#contact {
     border-top: 4px solid indianred;
     .title {
         text-align: center;
@@ -15,34 +15,57 @@
     .contactContainer {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        border: 1px solid black;
-        margin: 40px 2% 40px 2%;
+        justify-content: center;
+        margin: 50px auto 50px auto;;
+        width: 100%;
+       
 
+        @media (max-width: 600px) {
+            flex-direction: column;
+            margin: 15px auto 15px auto
+            
+        }
+    
         .form {
             display: flex;
             margin: auto;
-            border: 1px solid green;
+            border: 3px solid indianred;
+            border-radius: 5px;
+            background-color: @gray;
             flex-direction: column;
-            width: 40%;
+            width: 45%;
+            height: 330px;
+
+            @media (max-width: 600px) {
+                margin-bottom: 15px;
+                width: 80%;
+            }
 
             h2 {
+                margin: 10px auto auto auto;
                 text-align: center;
-                font-size: 1.2rem;
+                font-size: 1.6rem;
 
+            }
+
+            hr {
+                width: 60px;
+                border-bottom: 4px solid indianred;
+                margin-bottom: 20px;
             }
 
             form {
                 display: flex;
                 flex-direction: column;
                 margin: 10px 0 10px 0;
+                
                
                 input {
                     margin: auto auto 10px auto;
                     height: 20px;
                     width: 130px;
                     border: 2px solid indianred;
-                    border-radius: 10px;
+                    
                     
                 }
                 
@@ -51,7 +74,7 @@
                     width: 70%;
                     margin: auto auto 10px auto;
                     border: 2px solid indianred;
-                    border-radius: 10px;
+                    
                }
 
                button {
@@ -59,12 +82,105 @@
                    text-align: center;
                    margin: auto;
                    border-radius: 10px;
-                   border: 2px solid @gray;
+                   border: 2px solid indianred;
                    cursor: pointer;
                    padding: 5px 10px;
-                   background: indianred;
                }
             }  
+        }
+
+        .otherContact {
+            border: 3px solid indianred;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 45%;
+            height: 330px;
+            border-radius: 5px;
+            background-color: @gray;
+
+            @media (max-width: 600px) {
+                margin-top: 30px;
+                width: 80%;
+            }
+
+            
+
+            h2 {
+                margin: 10px auto auto auto;
+                text-align: center;
+                font-size: 1.6rem;
+
+            }
+
+            hr {
+                width: 60px;
+                border-bottom: 4px solid indianred;
+                margin-bottom: 20px;
+            }
+            
+
+            .githubSection {
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+               
+
+                .githubicon {
+                    display: flex;
+                    align-self: center;
+                    margin-top: 10px;
+                    margin-left: -60px;
+                }
+
+                .githubAPI {
+                    
+                    margin: 5px 5px 5px 0;
+
+                    p {
+                        font-size: 1rem;
+
+                        &:hover {
+                            color: lightgray;
+                        }
+                    }
+                }
+            }
+
+            .otherInfo {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+
+                .contactIcons {
+                    display: flex;
+                    flex-direction: row;
+                    margin: auto;
+                    justify-content: space-evenly;
+                }
+
+                .contactEmailPhone {
+                    display: flex;
+                    flex-direction: column;
+                    margin: auto;
+                    text-align: center;
+                    padding: 10px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        color: black;
+                        padding: 5px auto 5px auto;
+
+                        &:hover {
+                            color: indianred;
+                        }
+                    }
+                }
+            }
+
+           
+           
         }
     }
 }
