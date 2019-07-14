@@ -330,9 +330,8 @@ a img {
   flex-direction: row;
 }
 .navMobile .display {
-  visibility: hidden;
   transition: all 1s ease-in-out;
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   flex-direction: row;
   width: 100%;
@@ -347,6 +346,7 @@ a img {
 .navMobile .display .logo {
   display: flex;
   align-self: center;
+  opacity: 0;
 }
 .navMobile .display .navIcons {
   opacity: 0;

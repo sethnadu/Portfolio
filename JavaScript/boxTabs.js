@@ -2,10 +2,8 @@ class Tab {
     constructor(element) {
         this.element = element;
         this.tabData = this.element.dataset.tab;
-
-        
       
-            this.box = document.querySelectorAll(`.box[data-tab = '${this.tabData}']`);
+        this.box = document.querySelectorAll(`.box[data-tab = '${this.tabData}']`);
       
 
         this.box = Array.from(this.box).map(card => new TabData((card)));
@@ -31,8 +29,7 @@ selectTab() {
     this.element.classList.add("activeTab");
    
 
-    this.box.forEach(box => 
-        box.selectBox());
+    this.box.forEach(box =>  box.selectBox());
         
     }
 }

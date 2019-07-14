@@ -26,6 +26,7 @@ navImage2.classList.toggle("hide");
 
 navImage.addEventListener("click", () => {
     display.classList.add("expand")
+    document.querySelector(".logo").style.opacity ="1";
     a.forEach(a => {
         a.style.opacity = "1";
     })
