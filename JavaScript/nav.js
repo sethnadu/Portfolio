@@ -30,6 +30,7 @@ navImage.addEventListener("click", () => {
         a.style.opacity = "1";
     })
     navIcons.style.opacity = "1";
+    TweenLite.to(".logo", .5, { ease: Power2.easeIn, y: 0 });
    
     
 })
@@ -39,6 +40,7 @@ navImage2.addEventListener("click", () => {
     a.forEach(a => {
         a.style.opacity = "0";
     })
+    TweenLite.to(".logo", .5, { ease: Power2.easeOut, y: -200 });
     
 })
 

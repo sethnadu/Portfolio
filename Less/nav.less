@@ -79,27 +79,16 @@
       margin-right: 15%;
     }  
 
-    .navIcons {
-      opacity: 0;
-      flex-direction: row;
-      justify-self: center;
-      transition: opacity .5 ease-in-out;
-      width: 40%;
-
-      img {
-        padding: 0 5px 0 5px;
-        transition: opacity .5 ease-in-out;
-      }
-    }
   }
 
-  // .navIcons:nth-of-type(1) {
+  .navIcons:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-self: flex-end;
+    width: 100%;
     
-  //   padding: 0;
-  //   justify-self: space-evenly;
-    
-    
-  // }
+  }
 
 
 
@@ -115,13 +104,42 @@
 
   .display {
     visibility: hidden;
+    transition: all 1s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    
+
+    .showable {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 30px;
-    margin: 0 auto;
-    width: 100%;
-    transition: all .5s ease-in;
+    // margin: 0 auto;
+    width: 50%;
+    }
+
+    .logo {
+      display: flex;
+      align-self: center;
+    }
+
+    .navIcons {
+      opacity: 0;
+      flex-direction: column;
+      display: flex;
+      align-items:flex-end;
+      width: 50%;
+      margin: -5px 0 10px 0;
+
+      a {
+        margin: 5px 0 5px -40px;
+        text-align: right;
+
+      }
+    }
+    
     
   
     a {
@@ -134,7 +152,7 @@
       text-align: left;
       width: 80px;
       opacity:0;
-      transition: all .3s ease-in;
+      transition: all .5s ease-in;
 
       &:hover {
         color: indianred;

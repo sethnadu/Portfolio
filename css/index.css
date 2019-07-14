@@ -315,16 +315,12 @@ a img {
   font-family: 'Audiowide', cursive;
   margin-right: 15%;
 }
-.navMobile .navInfo .navIcons {
-  opacity: 0;
+.navMobile .navIcons:nth-of-type(1) {
+  display: flex;
   flex-direction: row;
-  justify-self: center;
-  transition: opacity 0.5 ease-in-out;
-  width: 40%;
-}
-.navMobile .navInfo .navIcons img {
-  padding: 0 5px 0 5px;
-  transition: opacity 0.5 ease-in-out;
+  padding: 0;
+  justify-self: flex-end;
+  width: 100%;
 }
 .navMobile .navMobileSection {
   background: indianred;
@@ -335,13 +331,34 @@ a img {
 }
 .navMobile .display {
   visibility: hidden;
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+.navMobile .display .showable {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 30px;
-  margin: 0 auto;
-  width: 100%;
-  transition: all 0.5s ease-in;
+  width: 50%;
+}
+.navMobile .display .logo {
+  display: flex;
+  align-self: center;
+}
+.navMobile .display .navIcons {
+  opacity: 0;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+  margin: -5px 0 10px 0;
+}
+.navMobile .display .navIcons a {
+  margin: 5px 0 5px -40px;
+  text-align: right;
 }
 .navMobile .display a {
   text-decoration: none;
@@ -353,7 +370,7 @@ a img {
   text-align: left;
   width: 80px;
   opacity: 0;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 .navMobile .display a:hover {
   color: indianred;
