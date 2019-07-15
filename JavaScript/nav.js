@@ -34,9 +34,9 @@ navImage.addEventListener("click", () => {
     display.classList.add("expand")
     document.querySelector(".logo").style.opacity ="1";
     a.forEach(a => {
-        a.style.opacity = "1";
+        a.style.display = "flex";
     })
-    navIcons.style.opacity = "1";
+    navIcons.style.display = "flex";
     TweenLite.to(".logo", .5, { ease: Power2.easeIn, y: 0 });
     
    
@@ -49,9 +49,9 @@ navImage2.addEventListener("click", () => {
     display.classList.remove("expand")
     
     a.forEach(a => {
-        a.style.opacity = "0";
+        a.style.display = "none";
     })
-    navIcons.style.opacity = "0";
+    navIcons.style.display = "none";
     TweenLite.to(".logo", .5, { ease: Power2.easeOut, y: -200 });
     
     

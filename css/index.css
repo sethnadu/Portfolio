@@ -140,14 +140,14 @@ a img {
   flex-direction: column;
 }
 .top .screen .filler {
-  display: none;
+  display: flex;
   opacity: 0;
   width: 100%;
-  position: fixed;
   z-index: 2;
   height: 200px;
   margin-top: 50px;
   background-color: blue;
+  margin-bottom: -200px;
 }
 .top .screen #content {
   display: flex;
@@ -359,12 +359,12 @@ a img {
 .navMobile .display .logo {
   display: flex;
   align-self: center;
+  position: fixed;
   opacity: 0;
 }
 .navMobile .display .navIcons {
-  opacity: 0;
   flex-direction: column;
-  display: flex;
+  display: none;
   align-items: flex-end;
   width: 50%;
   margin: -5px 0 10px 0;
@@ -373,7 +373,11 @@ a img {
   margin: 5px 0 5px -40px;
   text-align: right;
 }
+.navMobile .display .navIcons img {
+  height: 50px;
+}
 .navMobile .display a {
+  display: none;
   text-decoration: none;
   padding: 10px 20px;
   color: black;
@@ -382,7 +386,6 @@ a img {
   border-radius: 20px;
   text-align: left;
   width: 80px;
-  opacity: 0;
   transition: all 0.5s ease-in;
 }
 .navMobile .display a:hover {
