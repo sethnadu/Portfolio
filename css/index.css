@@ -842,7 +842,7 @@ a img {
   margin: auto;
   border: 3px solid indianred;
   border-radius: 5px;
-  background-color: rgba(78, 76, 76);
+  background-color: gray;
   flex-direction: column;
   width: 45%;
   height: 330px;
@@ -898,7 +898,7 @@ a img {
   width: 45%;
   height: 330px;
   border-radius: 5px;
-  background-color: rgba(78, 76, 76);
+  background-color: gray;
   padding: 10px;
 }
 @media (max-width: 600px) {
