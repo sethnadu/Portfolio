@@ -45,7 +45,7 @@ navImage.addEventListener("click", () => {
 
 navImage2.addEventListener("click", () => {
     fillerDiv.style.zIndex = "2";
-    fillerDiv.style.display = "none";
+    fillerDiv.style.display = "flex";
     display.classList.remove("expand")
     
     a.forEach(a => {
