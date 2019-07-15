@@ -13,18 +13,3 @@ const responsive = document.querySelector(".responsive");
 const javascriptIcon = document.querySelector(".javascriptIcon");
 const css = document.querySelector(".css");
 
-aboutSectionDiv.addEventListener("scroll", () => {
-    aboutIcons.forEach(icon => {
-       icon.style.visibility = "visible"; 
-       icon.style.opacity = "1";
-    })
-    // TweenLite.to(".responsive", .5, { ease: Power2.easeOut, x: -600 });
-})
-
-aboutSectionDiv.addEventListener("mouseover", () => {
-    aboutIcons.forEach(icon => {
-       icon.style.visibility = "visible"; 
-       icon.style.opacity = "1";
-    })
-    // TweenLite.to(".responsive", .5, { ease: Power2.easeOut, x: -600 });
-})

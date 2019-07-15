@@ -30,6 +30,7 @@ navImage2.classList.toggle("hide");
 
 navImage.addEventListener("click", () => {
     fillerDiv.style.zIndex = "0";
+    fillerDiv.style.display = "flex";
     display.classList.add("expand")
     document.querySelector(".logo").style.opacity ="1";
     a.forEach(a => {
@@ -44,6 +45,7 @@ navImage.addEventListener("click", () => {
 
 navImage2.addEventListener("click", () => {
     fillerDiv.style.zIndex = "2";
+    fillerDiv.style.display = "none";
     display.classList.remove("expand")
     
     a.forEach(a => {
