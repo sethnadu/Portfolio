@@ -889,6 +889,7 @@ a img {
   border: 2px solid indianred;
   cursor: pointer;
   padding: 5px 10px;
+  background-color: lightgray;
 }
 #contact .contactContainer .otherContact {
   border: 3px solid indianred;
