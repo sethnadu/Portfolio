@@ -10,17 +10,17 @@ const locationContent = document.querySelector("#content h3");
 const content = document.getElementById("content");
 
 
-    iconList.forEach(i => {
-        i.addEventListener("mouseover", () => {
-           i.style.color = "rgba(78, 76, 76)"; 
-        })
+    // iconList.forEach(i => {
+    //     i.addEventListener("mouseover", () => {
+    //        i.style.color = "rgba(78, 76, 76)"; 
+    //     })
         
-    })
+    // })
     
 
-        iconList.forEach(i => {
-            i.addEventListener("mouseleave", () => {
-               i.style.color = "indianred"; 
-            })
-    })
+    //     iconList.forEach(i => {
+    //         i.addEventListener("mouseleave", () => {
+    //            i.style.color = "indianred"; 
+    //         })
+    // })
 
