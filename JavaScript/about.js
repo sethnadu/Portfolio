@@ -9,18 +9,14 @@ const job = document.querySelector("#content h2");
 const locationContent = document.querySelector("#content h3");
 const content = document.getElementById("content");
 
+const responsive = document.querySelector(".responsive");
+const javascriptIcon = document.querySelector(".javascriptIcon");
+const css = document.querySelector(".css");
 
-    // iconList.forEach(i => {
-    //     i.addEventListener("mouseover", () => {
-    //        i.style.color = "rgba(78, 76, 76)"; 
-    //     })
-        
-    // })
-    
-
-    //     iconList.forEach(i => {
-    //         i.addEventListener("mouseleave", () => {
-    //            i.style.color = "indianred"; 
-    //         })
-    // })
-
+aboutSectionDiv.addEventListener("mouseover", () => {
+    aboutIcons.forEach(icon => {
+       icon.style.visibility = "visible"; 
+       icon.style.opacity = "1";
+    })
+    // TweenLite.to(".responsive", .5, { ease: Power2.easeOut, x: -600 });
+})
