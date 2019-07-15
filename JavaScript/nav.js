@@ -17,6 +17,7 @@ const navIcons = document.querySelector(".navIcons");
 const navGithub = document.querySelector(".github");
 const navLinkedin = document.querySelector(".linkedin");
 const navTwitter = document.querySelector(".twitter");
+const fillerDiv = document.querySelector(".filler")
 
 let navItemMobileArray = Array.from(navItemMobile);
 
@@ -28,6 +29,7 @@ navImage2.classList.toggle("hide");
 });
 
 navImage.addEventListener("click", () => {
+    fillerDiv.style.zIndex = "0";
     display.classList.add("expand")
     document.querySelector(".logo").style.opacity ="1";
     a.forEach(a => {
@@ -35,17 +37,21 @@ navImage.addEventListener("click", () => {
     })
     navIcons.style.opacity = "1";
     TweenLite.to(".logo", .5, { ease: Power2.easeIn, y: 0 });
+    
    
     
 })
 
 navImage2.addEventListener("click", () => {
+    fillerDiv.style.zIndex = "2";
     display.classList.remove("expand")
+    
     a.forEach(a => {
         a.style.opacity = "0";
     })
     navIcons.style.opacity = "0";
     TweenLite.to(".logo", .5, { ease: Power2.easeOut, y: -200 });
+    
     
 })
 
