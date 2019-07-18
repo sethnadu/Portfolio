@@ -753,6 +753,7 @@ a img {
   font-family: cursive;
   margin-bottom: 10px;
   color: rgba(78, 76, 76);
+  padding: 10px;
 }
 #projects .boxes .box .boxContent h4 {
   font-size: 1.2rem;
@@ -812,6 +813,15 @@ a img {
   background: url("https://img.icons8.com/ios-filled/100/000000/closed-sign.png") center;
 }
 #projects .boxes .box:nth-child(8) {
+  background: url("../Assets/Projects/individual/Sprint-JavaScript.png") center center / cover;
+}
+#projects .boxes .box:nth-child(9) {
+  background: url("../Assets/Projects/individual/javascript-dom.png") center center / cover;
+}
+#projects .boxes .box:nth-child(10) {
+  background: url("../Assets/Projects/individual/javascript-api.png") center center / cover;
+}
+#projects .boxes .box:nth-child(11) {
   background: url("../Assets/Projects/Personal/personal1.png") center center / cover;
 }
 #contact {
@@ -845,7 +855,7 @@ a img {
   margin: auto;
   border: 3px solid indianred;
   border-radius: 5px;
-  background-color: #4e4c4c;
+  background-color: gray;
   flex-direction: column;
   width: 45%;
   height: 330px;
@@ -902,7 +912,7 @@ a img {
   width: 45%;
   height: 330px;
   border-radius: 5px;
-  background-color: #4e4c4c;
+  background-color: gray;
   padding: 10px;
 }
 @media (max-width: 600px) {
