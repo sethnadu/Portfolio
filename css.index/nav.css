@@ -1,0 +1,158 @@
+#navTablet {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  margin-top: 0px;
+  background-color: indianred;
+  border-bottom: 4px solid black;
+}
+@media (min-width: 800px) {
+  #navTablet {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  #navTablet {
+    display: none;
+  }
+}
+#navTablet .navInfo {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  margin: auto auto auto 10px;
+}
+#navTablet .navInfo h1 {
+  width: 100%;
+  font-size: 1.3rem;
+  margin-left: 10px;
+  font-family: 'Audiowide', cursive;
+}
+#navTablet a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  margin: 0 10px;
+  font-weight: bolder;
+  border-radius: 20px;
+  max-width: 80px;
+  width: 100%;
+  text-align: center;
+}
+#navTablet a:hover {
+  color: rgba(78, 76, 76);
+  border-bottom: 2px solid rgba(78, 76, 76, 0.8);
+}
+.navMobile {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  z-index: 2;
+}
+@media (min-width: 600px) {
+  .navMobile {
+    display: none;
+  }
+}
+.navMobile .navInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.navMobile .navInfo h1 {
+  font-size: 1.3rem;
+  margin-left: 10px;
+  font-family: 'Audiowide', cursive;
+  margin-right: 15%;
+}
+.navMobile .navIcons:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-self: flex-end;
+  width: 100%;
+}
+.navMobile .navMobileSection {
+  background: indianred;
+  border-bottom: 4px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.navMobile .display {
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  height: 0;
+}
+.navMobile .display .showable {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 30px;
+  width: 50%;
+}
+.navMobile .display .logo {
+  display: flex;
+  align-self: center;
+  position: fixed;
+  opacity: 0;
+}
+.navMobile .display .navIcons {
+  flex-direction: column;
+  display: none;
+  align-items: flex-end;
+  width: 50%;
+  margin: -5px 0 10px 0;
+}
+.navMobile .display .navIcons a {
+  margin: 5px 0 5px -40px;
+  text-align: right;
+}
+.navMobile .display .navIcons img {
+  height: 50px;
+}
+.navMobile .display a {
+  display: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  font-size: 1.4rem;
+  height: 20px;
+  border-radius: 20px;
+  text-align: left;
+  width: 80px;
+  transition: all 0.5s ease-in;
+}
+.navMobile .display a:hover {
+  color: indianred;
+}
+.navMobile .img {
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 0 auto;
+  cursor: pointer;
+}
+.navMobile .expand {
+  visibility: visible;
+  display: flex;
+  background-color: rgba(78, 76, 76);
+  height: 180px;
+  border-bottom: 2px solid indianred;
+  transition: all 0.5s ease-in;
+}
+.navMobile .hide {
+  display: none;
+}

@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  bottom: 0;
+  flex-direction: row;
+  height: 30px;
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: indianred;
+  border-top: 4px solid black;
+}
+.footer a {
+  margin: auto 5px auto 5px;
+  font-size: 0.8rem;
+}
+.footer a i {
+  font-size: 1.2rem;
+  color: black;
+}
+.footer h2 {
+  font-size: 1.1rem;
+  font-family: 'Audiowide', cursive;
+}
+.footer h3 {
+  font-size: 0.8rem;
+  margin: auto 10px auto 10px;
+}
