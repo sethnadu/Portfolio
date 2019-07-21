@@ -225,7 +225,7 @@ a img {
   height: 100px;
   margin: 10px auto auto auto;
   border-radius: 50%;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .top .screen .arrow:hover {
   background-color: indianred;
@@ -551,6 +551,10 @@ a img {
   #navabout .aboutDiv .aboutText p {
     font-size: 0.9rem;
   }
+}
+#navabout .aboutDiv .aboutText p:first-letter {
+  font-size: 1.8rem;
+  font-family: cursive;
 }
 .icons {
   display: flex;
