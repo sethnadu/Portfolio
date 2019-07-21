@@ -775,8 +775,11 @@ a img {
 }
 #projects .boxes .box:nth-child(1) {
   display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
   width: 600px;
   max-height: 500px;
+  padding: 10px;
   overflow: auto;
 }
 #projects .boxes .box:nth-child(2) {
