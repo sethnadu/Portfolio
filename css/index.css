@@ -262,6 +262,7 @@ a img {
   margin-top: 0px;
   background-color: indianred;
   border-bottom: 4px solid black;
+  z-index: 2;
 }
 @media (min-width: 800px) {
   #navTablet {
@@ -413,6 +414,7 @@ a img {
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 #navabout .nav {
   display: flex;
@@ -425,6 +427,7 @@ a img {
   margin-bottom: 0px;
   background: indianred;
   border-bottom: 4px solid black;
+  z-index: 2;
 }
 @media (max-width: 800px) {
   #navabout .nav {
@@ -733,7 +736,7 @@ a img {
 #projects .boxes .box .boxContent {
   display: flex;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   opacity: 0;
   transition: all 0.5s ease-in-out;
   text-align: center;
@@ -768,6 +771,7 @@ a img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  z-index: 0;
 }
 #projects .boxes .box .boxContent .boxContentIcons a {
   text-decoration: none;
@@ -776,6 +780,7 @@ a img {
   padding-bottom: 30px;
   color: indianred;
   width: 100px;
+  z-index: 0;
 }
 #projects .boxes .box:nth-child(1) {
   display: flex;
