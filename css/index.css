@@ -759,7 +759,6 @@ a img {
   font-size: 1.4rem;
   font-family: cursive;
   margin-bottom: 10px;
-  color: rgba(78, 76, 76);
   padding: 10px;
 }
 #projects .boxes .box .boxContent h4 {
@@ -852,6 +851,25 @@ a img {
 }
 #projects .boxes .box:nth-child(15) {
   background: url("../Assets/Projects/Personal/personal1.png") center center / cover;
+}
+.githubInfo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.githubInfo .githubAPI {
+  text-align: left;
+  margin: 5px 5px 5px 0;
+}
+.githubInfo .githubAPI p {
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.githubInfo .githubAPI p:hover {
+  color: lightgray;
 }
 #contact {
   border-top: 4px solid indianred;
@@ -951,7 +969,7 @@ a img {
   }
 }
 #contact .contactContainer .otherContact h2 {
-  margin: 10px auto auto auto;
+  margin: 10px auto 5px auto;
   text-align: center;
   font-size: 1.6rem;
 }
@@ -960,30 +978,10 @@ a img {
   border-bottom: 4px solid indianred;
   margin-bottom: 20px;
 }
-#contact .contactContainer .otherContact .githubSection {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-}
-#contact .contactContainer .otherContact .githubSection .githubicon {
-  display: flex;
-  align-self: center;
-  margin-top: 10px;
-  margin-left: -55px;
-}
-#contact .contactContainer .otherContact .githubSection .githubAPI {
-  margin: 5px 5px 5px 0;
-}
-#contact .contactContainer .otherContact .githubSection .githubAPI p {
-  font-size: 1rem;
-}
-#contact .contactContainer .otherContact .githubSection .githubAPI p:hover {
-  color: lightgray;
-}
 #contact .contactContainer .otherContact .otherInfo {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin-top: 30px;
 }
 #contact .contactContainer .otherContact .otherInfo .contactIcons {
   display: flex;

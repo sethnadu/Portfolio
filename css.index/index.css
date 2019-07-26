@@ -225,7 +225,7 @@ a img {
   height: 100px;
   margin: 10px auto auto auto;
   border-radius: 50%;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .top .screen .arrow:hover {
   background-color: indianred;
@@ -262,6 +262,7 @@ a img {
   margin-top: 0px;
   background-color: indianred;
   border-bottom: 4px solid black;
+  z-index: 2;
 }
 @media (min-width: 800px) {
   #navTablet {
@@ -413,6 +414,7 @@ a img {
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 #navabout .nav {
   display: flex;
@@ -425,6 +427,7 @@ a img {
   margin-bottom: 0px;
   background: indianred;
   border-bottom: 4px solid black;
+  z-index: 2;
 }
 @media (max-width: 800px) {
   #navabout .nav {
@@ -551,6 +554,10 @@ a img {
   #navabout .aboutDiv .aboutText p {
     font-size: 0.9rem;
   }
+}
+#navabout .aboutDiv .aboutText p:first-letter {
+  font-size: 1.8rem;
+  font-family: cursive;
 }
 .icons {
   display: flex;
@@ -729,7 +736,7 @@ a img {
 #projects .boxes .box .boxContent {
   display: flex;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   opacity: 0;
   transition: all 0.5s ease-in-out;
   text-align: center;
@@ -752,7 +759,6 @@ a img {
   font-size: 1.4rem;
   font-family: cursive;
   margin-bottom: 10px;
-  color: rgba(78, 76, 76);
   padding: 10px;
 }
 #projects .boxes .box .boxContent h4 {
@@ -764,6 +770,7 @@ a img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  z-index: 0;
 }
 #projects .boxes .box .boxContent .boxContentIcons a {
   text-decoration: none;
@@ -772,11 +779,16 @@ a img {
   padding-bottom: 30px;
   color: indianred;
   width: 100px;
+  z-index: 0;
 }
 #projects .boxes .box:nth-child(1) {
   display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
   width: 600px;
   max-height: 500px;
+  padding: 10px;
+  overflow: auto;
 }
 #projects .boxes .box:nth-child(2) {
   display: flex;
@@ -811,6 +823,11 @@ a img {
   width: 100%;
   height: 100%;
 }
+#projects .boxes .box:nth-child(14) {
+  margin: auto 10%;
+  width: 100%;
+  height: 100%;
+}
 #projects .boxes .box:nth-child(4) {
   background: url("../Assets/Projects/buildweek/chef-portfolio/chefportfolio.png") center center / cover;
 }
@@ -827,7 +844,27 @@ a img {
   background: url("../Assets/Projects/individual/javascript-api.png") center center / cover;
 }
 #projects .boxes .box:nth-child(12) {
+  background: url("../Assets/Projects/individual/Nasa\ React.png") center center / cover;
+}
+#projects .boxes .box:nth-child(13) {
+  background: url("../Assets/Projects/individual/Sprint\ React\ 1.png") center center / cover;
+}
+#projects .boxes .box:nth-child(15) {
   background: url("../Assets/Projects/Personal/personal1.png") center center / cover;
+}
+.githubInfo {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.githubInfo .githubAPI {
+  margin: 5px 5px 5px 0;
+}
+.githubInfo .githubAPI p {
+  text-align: left;
+  font-size: 1rem;
+}
+.githubInfo .githubAPI p:hover {
+  color: lightgray;
 }
 #contact {
   border-top: 4px solid indianred;
@@ -946,15 +983,6 @@ a img {
   align-self: center;
   margin-top: 10px;
   margin-left: -55px;
-}
-#contact .contactContainer .otherContact .githubSection .githubAPI {
-  margin: 5px 5px 5px 0;
-}
-#contact .contactContainer .otherContact .githubSection .githubAPI p {
-  font-size: 1rem;
-}
-#contact .contactContainer .otherContact .githubSection .githubAPI p:hover {
-  color: lightgray;
 }
 #contact .contactContainer .otherContact .otherInfo {
   display: flex;

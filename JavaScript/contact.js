@@ -32,10 +32,10 @@ function gitHub(loginApi, reposApi, followersApi, followingApi) {
     
     info.classList.add("githubInfo");
 
-    login.textContent = `Username: ${loginApi}`;
-    repos.textContent = `Repos: ${reposApi}`;
-    followers.textContent =`Followers: ${followersApi}`;
-    following.textContent =`Following: ${followingApi}`;
+    login.textContent = `Username: ${loginApi}  `;
+    repos.textContent = `Repos: ${reposApi}  `;
+    followers.textContent =`Followers: ${followersApi}  `;
+    following.textContent =`Following: ${followingApi}  `;
 
     return info;
 
