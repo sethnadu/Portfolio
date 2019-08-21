@@ -849,14 +849,11 @@ a img {
 #projects .boxes .box:nth-child(13) {
   background: url("../Assets/Projects/individual/Sprint\ React\ 1.png") center center / cover;
 }
-#projects .boxes .box:nth-child(15) {
+#projects .boxes .box:nth-child(16) {
   background: url("../Assets/Projects/Personal/personal1.png") center center / cover;
 }
-#projects .boxes .box:nth-child(16) {
+#projects .boxes .box:nth-child(15) {
   background: url("../Assets/Projects/Personal/seinfeldquotes.png") center center / cover;
-}
-#projects .boxes .box:nth-child(17) {
-  background: url("../Assets/Projects/Personal/harrypottersearch.png") center center / cover;
 }
 .githubInfo {
   display: flex;
